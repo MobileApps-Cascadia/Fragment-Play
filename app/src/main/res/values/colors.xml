@@ -10,4 +10,6 @@
     <color name="deepblue">#0D47A1</color>
     <color name="golden">#827717</color>
     <color name="gray">#706F6F</color>
+    <color name="lightgold">#FAF3DF</color>
+    <color name="lightblue">#ECEEFB</color>
 </resources>
