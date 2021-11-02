@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private FragmentManager fm;
@@ -13,9 +14,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         fm = getSupportFragmentManager();
-        fm.beginTransaction()
-                .setReorderingAllowed(true)
-                .add(R.id.fragment_container_view, FragmentOne.class, null)
-                .commit();
+        //TODO: Use the fragment manager and a transaction to add FragmentOne to the Activity's fragment container view
+
+
+        Button swap = findViewById(R.id.swap_button);
+        //TODO: Add onClickListener that calls swap
+
     }
+
+    public void swap() {
+        //TODO: Use Transactions and the BackStack to swap between FragmentOne and FragmentTwo
+
+    }
+
 }
